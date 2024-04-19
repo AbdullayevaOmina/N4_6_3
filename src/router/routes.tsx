@@ -1,4 +1,4 @@
-import { Products, SignIn, SignUp, Brands } from "@pages";
+import { Products, SignIn, SignUp } from "@pages";
 
 const router = [
   {
@@ -16,11 +16,6 @@ const router = [
     element: <Products />,
     content: "Products",
   },
-  {
-    path: "main/brands",
-    element: <Brands />,
-    content: "Brands",
-  },
-];
+ ];
 
 export default router;
