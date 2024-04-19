@@ -24,9 +24,9 @@ function index() {
 
   const handleFormSubmit = async () => {
     try {
-      // await axios.post("/auth/register", formData);
-      const response = await axios.post("/auth/register", formData);
-      console.log(response);
+      await axios.post("/auth/register", formData);
+      // const response = await axios.post("/auth/register", formData);
+      // console.log(response);
       navigate("/signin");
     } catch (error) {
       console.error("Error creating user:", error);
